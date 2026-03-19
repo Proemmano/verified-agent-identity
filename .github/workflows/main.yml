@@ -1,5 +1,5 @@
 name: Verify Human Identity
-on:  workflow_dispatch:    inputs:      agent_name:        description: 'Bukunmi'        required: true        default: 'Bukunmi'      agent_description:        description: 'Bukunmi'      required: true        default: 'Bukunmi AI Agent'
+on:  workflow_dispatch:    inputs:      agent_name:        description: 'Bukunmi' required: true        default: 'Bukunmi'      agent_description:        description: 'Bukunmi'      required: true        default: 'Bukunmi AIAgent'
 jobs:  verify:    runs-on: ubuntu-latest
     steps:      - name: Checkout repo        uses: actions/checkout@v3
       - name: Setup Node.js        uses: actions/setup-node@v3        with:          node-version: '20'
